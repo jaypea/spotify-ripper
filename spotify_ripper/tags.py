@@ -72,7 +72,7 @@ def set_metadata_tags(args, audio_file, idx, track, ripper):
 
         # cover art image
         def get_cover_image(image_link):
-            image_link = 'http://open.spotify.com%s' % (
+            image_link = 'https://i.scdn.co%s' % (
                 image_link[len('spotify'):].replace(':', '/'))
             cover_file = urllib.urlretrieve(image_link)[0]
             
